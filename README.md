@@ -7,3 +7,6 @@ and MacOS, so quite a few of them have to be picked and copied individually.
 
 Some of them (like the poweshell config) also don't go in the home directory,
 so be aware of where you're copying them
+
+It's also likely that the files need at least a little bit of changing between
+my personal/work and Windows/MacOS computers.
