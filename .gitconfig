@@ -1,0 +1,100 @@
+[alias]
+    st = status
+    sw = switch
+    co = commit
+    br = branch
+    fe = fetch
+    ll = log --oneline --graph --all --decorate
+    l = log --oneline --decorate
+    sh = show --stat --abbrev-commit
+    ap = add -p
+
+[credential "https://gitlab.ad.merica.cz"]
+    username = volf.matyas
+
+[user]
+    email = volfmatyas1@gmail.com
+    name = Matyáš Volf
+
+[core]
+    editor = nvim
+    protectNTFS = false
+    pager = delta
+    autocrlf = true
+    excludesfile = ~/.gitignore
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+    line-numbers = true
+
+[merge]
+    conflictstyle = zdiff3
+
+[diff]
+    colorMoved = plain
+    algorithm = histogram
+    mnemonicPrefix = true
+    renames = true
+
+[commit]
+    template = ~/.gitmessage
+    verbose = true
+
+[init]
+    defaultBranch = main
+
+[rebase]
+    autoSquash = true
+    autoStash = true
+    updateRefs = true
+
+[column]
+    ui = auto
+
+[branch]
+    sort = -committerdate
+
+[tag]
+    sort = version:refname
+
+[push]
+    autoSetupRemote = true
+    followTags = true
+
+[fetch]
+    prune = true
+    pruneTags = true
+    all = true
+    parallel = 0
+
+[help]
+    autocorrect = prompt
+
+[rerere]
+    enabled = true
+    autoupdate = true
+
+[pull]
+    rebase = true
+
+[stash]
+	showPatch = true
+	showStat = false
+
+# git-credential-manager generated
+[credential]
+	helper =
+	helper = C:/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[credential "https://git.overleaf.com"]
+	provider = generic
+[advice]
+	mergeConflict = false
+	addEmptyPathspec = false
+[maintenance]
+	repo = C:/Users/matya/school/thesis-text
+	repo = C:/Users/matya/Documents/Obsidian_notes/Vault
