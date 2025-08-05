@@ -20,7 +20,6 @@
     editor = nvim
     protectNTFS = false
     pager = delta
-    autocrlf = true
     excludesfile = ~/.gitignore
 
 [interactive]
