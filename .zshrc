@@ -17,6 +17,7 @@ alias gd="git diff"
 alias gdc="git diff --cached"
 alias gre="git restore"
 alias gres="git restore --staged"
+alias grb='git rebase $(git symbolic-ref refs/remotes/origin/HEAD --short)'
 
 # bat
 export BAT_THEME="Catppuccin Mocha"
