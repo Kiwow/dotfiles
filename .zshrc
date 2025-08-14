@@ -23,7 +23,7 @@ export BAT_THEME="Catppuccin Mocha"
 
 # aliases
 alias clr=clear
-alias ls=eza
+alias ls="eza --color=automatic --group-directories-first --icons=never"
 alias cat=bat
 
 export NVM_DIR="$HOME/.nvm"
