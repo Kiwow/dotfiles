@@ -1,0 +1,38 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "shift-s": ["vim::PushAddSurrounds", {}]
+    }
+  },
+  {
+    // Use neovim's yank behavior: yank to end of line.
+    "context": "vim_mode == normal && !menu",
+    "bindings": {
+      "shift-y": ["workspace::SendKeystrokes", "y $"]
+    }
+  },
+  {
+    // Don't skip over soft-wrapped lines
+    "context": "VimControl && !menu",
+    "bindings": {
+      "j": ["vim::Down", { "display_lines": true }],
+      "k": ["vim::Up", { "display_lines": true }],
+      "$": ["vim::EndOfLine", { "display_lines": true }],
+      "^": ["vim::FirstNonWhitespace", { "display_lines": true }]
+    }
+  },
+  {
+    "context": "VimControl && !VimCount && !menu",
+    "bindings": {
+      "0": ["vim::StartOfLine", { "display_lines": true }]
+    }
+  }
+]
